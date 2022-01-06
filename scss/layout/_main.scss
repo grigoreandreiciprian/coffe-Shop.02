@@ -1,0 +1,143 @@
+main {
+     
+    & h1 {
+        text-align: center;
+        margin: 5%;
+    }
+    & .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        grid-gap:20px;
+        margin: auto;
+    }
+
+    .cards i{
+        font-size: 20px;
+    }
+
+
+    & .cards .cardS{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        animation: cardS 1s linear 1;
+    }
+
+
+    & .cards .cardD{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        animation: cardD 1s linear 1;
+    }
+
+
+    & .cards .cardD i{
+       margin: 0px 20px;   
+    }
+
+    & .mainImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: mug 1s linear 1;
+    }
+
+
+    & .mainImg img{
+        width: 100%;
+        margin: 20px;
+        max-width: 450px;
+    }
+}
+
+
+
+@media (min-width:1000px){
+    main {
+
+        & h1 {
+            text-align: center;
+            margin: 5%;
+        }
+        & .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 80%;
+            grid-gap:20px;
+            margin: auto;
+        }
+    
+        .cards i{
+            font-size: 20px;
+        }
+    
+    
+        & .cards .cardS{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+        }
+    
+    
+        & .cards .cardD{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+        }
+    
+    
+        & .cards .cardD i{
+           margin: 0px 20px;   
+        }
+    
+    
+        & .mainImg img{
+            width: 100%;
+            margin: 20px;
+        }
+}
+}
+
+@keyframes mug{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes cardS{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes cardD{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

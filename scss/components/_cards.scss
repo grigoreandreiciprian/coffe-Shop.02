@@ -1,0 +1,34 @@
+.cards{
+    &
+    & i{
+        font-size: 20px;
+    }
+
+
+    & .cardS{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+    }
+
+
+    &  .cardD{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+    }
+
+
+    &  .cardD i{
+       margin: 0px 20px;
+       
+    }
+
+
+    & .mainImg img{
+        width: 100%;
+        margin: 20px;
+    }
+}

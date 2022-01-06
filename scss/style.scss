@@ -1,0 +1,31 @@
+//utilities
+
+@import 'utilities/mixins',
+        'utilities/variables';
+
+ 
+
+
+// base
+
+
+@import 'base/base',
+        'base/reset';
+
+
+// layout
+
+
+@import 'layout/header',
+        'layout/main',
+        'layout/menu',
+        'layout/review',
+        'layout/footer';
+
+
+
+// components
+
+@import 'components/cards',
+        'components/menuCard',
+        'components/reviewText';

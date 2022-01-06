@@ -1,0 +1,26 @@
+.review{
+    display: grid;
+    grid-template-columns: .1fr 1fr .1fr;
+    grid-gap:20px;
+    width: 80%;
+    margin: auto;
+
+
+    & .leftArrow{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 30px;
+        height: 10%;
+        margin: auto;
+    }
+
+    & .arrowRight{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 30px;
+        height: 10%;
+        margin: auto;
+    }
+}
