@@ -275,3 +275,105 @@ review.addEventListener('click', (e) =>{
     
 
 })
+
+
+
+let monthlyCanvas=document.querySelector(".monthly-chart");
+
+
+let monthlyData = {
+    labels: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ],
+    datasets: [
+      {
+        data:[40,50,60,70,75,80,90,90,100,70,60,75],
+        backgroundColor: "rgba(116, 119, 191, .3)",
+        borderWidth: 1,
+        fill: true,
+      },
+    ],
+  };
+  
+  
+
+
+let monthlyOptions = {
+    plugins:{
+    aspectRatio: 2.5,
+    animation: {
+      duration: 0,
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
+    legend: {
+      display: false,
+    },
+    }
+  };
+
+
+  let mothlyChart=new Chart(monthlyCanvas,{
+      type:"line",
+      data:monthlyData,
+      options:monthlyOptions,
+  });
+
+
+  let salesCanvas=document.querySelector(".sales-chart")
+
+
+  let salesData={
+      labels:[
+      "Cappucino",
+      "Expresso",
+      "Chai Tea",
+      "Latte",
+      "Mocachino",
+      ],
+
+      datasets: [
+          {
+             label: "Best products",
+             data:[60,50,40,30,20],
+             backgroundColor:"rgb(46, 139, 87)",
+             borderColor: "rgb(46, 139, 87)",
+             borderWidth:1,
+          }
+      ]
+  };
+
+
+  let salesChart=new Chart(salesCanvas,{
+      type:"bar",
+      data:salesData,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      },
+  })
+
+
+
+

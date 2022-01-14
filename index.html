@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/8cd91b34db.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -171,6 +172,39 @@
     </section>
 
 
+    <section class="charts">
+
+        <h1>This year charts</h1>
+
+        <section class="charts-box">
+
+
+
+        <section class="monthly-sales chart">
+            <h1>This year sales</h1>
+            
+            <div class="monthly-widget">
+              <!-- element line graph will atach to  -->
+              <canvas class="monthly-chart">
+              </canvas>
+           </div>
+        </section>
+
+        <section class="most-sales chart">
+            <h1>The best selling products</h1>
+        
+             <div class="monthly-widget">
+                <!-- element line graph will atach to  -->
+                <canvas class="sales-chart">
+                 </canvas>
+            </div>
+         </section>
+
+         </section>
+
+    </section>
+
+
     <section class="footer">
 
         <section class="aboutInfo">
@@ -253,7 +287,7 @@
         
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="data.js"></script>
     <script src="helpers.js"></script>
     <script src="app.js"></script>

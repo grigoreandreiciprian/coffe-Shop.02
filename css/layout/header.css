@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  font-size: 25px;
+  transition: all 0.3s;
+}
+header nav a:hover {
+  color: #c7a17a;
+}
+header img {
+  justify-content: flex-start;
+  margin-right: 5%;
+}
+
+/*# sourceMappingURL=header.css.map */

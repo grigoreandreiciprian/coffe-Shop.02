@@ -589,6 +589,22 @@ main .mainImg img {
   text-decoration: none;
 }
 
+.charts {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.charts .charts-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.charts .chart {
+  width: 100%;
+  margin: 20px;
+}
+
 .cards .cards i {
   font-size: 20px;
 }
